@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/medical.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC's medical page</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      p {
+        color: goldenrod;
+      }
+      ul {
+        color: aqua;
+      }
+      h7 {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: blue; font-size: 50px; margin: 150px">
+      <u>Welcome to the medical page of the Ire's medical centre</u>
+    </h2>
+    <p>
+      Here, we focus on our <u><b>first aid and medical treatments</b></u>
+    </p>
+    <ul type="square">
+      <p>
+        Here are some numbers to call if you cant make it because of your illnes
+      </p>
+      <li>08076534571</li>
+      <li>09123549856</li>
+      <li>08177633985 and</li>
+      <li>08034342869</li>
+      <p>If you call these lines, our first aiders will be on their way.</p>
+      <h7
+        >But, there is another option for more specific and detailed info about
+        your illness.</h7
+      >
+      <form>
+        <label>Illness</label>
+        <input type="radio" name="illness or injury" />
+        <br />
+        <label>Injury</label>
+        <input type="radio" name="illness or injury" />
+        <p>
+          If it is an injury call the numbers and our first aiders will be on
+          their way.
+        </p>
+        <p>If it is an <b>illness</b>,are you feeling:</p>
+        <label>Head-ache</label>
+        <input type="checkbox" />
+        <br />
+        <label>Stomach-ache</label>
+        <input type="checkbox" />
+        <br />
+        <label>Vomiting</label>
+        <input type="checkbox" />
+        <br />
+        <label>High temperature</label>
+        <input type="checkbox" />
+        <br />
+        <label>Poor appetite</label>
+        <input type="checkbox" />
+        <br />
+        <label>Others</label>
+        <input type="checkbox" />
+        <p>If you tick others, please specify</p>
+        <input />
+      </form>
+      <p>
+        Thanks for your patronage
+        <a href="http://127.0.0.1:5500/job.html" target="_blank">Click this </a
+        >if you are interested in wotking with us and<a
+          href="http://127.0.0.1:5500/customer.html"
+          target="_blank"
+          >this</a
+        >
+        to visit our customer care web page to rate and comment about our
+        hospitality
+      </p>
+      <h5>THANK YOU</h5>
+      <p></p>
+
+      <!-- Code injected by live-server -->
+      <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ("WebSocket" in window) {
+          (function () {
+            function refreshCSS() {
+              var sheets = [].slice.call(document.getElementsByTagName("link"));
+              var head = document.getElementsByTagName("head")[0];
+              for (var i = 0; i < sheets.length; ++i) {
+                var elem = sheets[i];
+                var parent = elem.parentElement || head;
+                parent.removeChild(elem);
+                var rel = elem.rel;
+                if (
+                  (elem.href && typeof rel != "string") ||
+                  rel.length == 0 ||
+                  rel.toLowerCase() == "stylesheet"
+                ) {
+                  var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                  elem.href =
+                    url +
+                    (url.indexOf("?") >= 0 ? "&" : "?") +
+                    "_cacheOverride=" +
+                    new Date().valueOf();
+                }
+                parent.appendChild(elem);
+              }
+            }
+            var protocol =
+              window.location.protocol === "http:" ? "ws://" : "wss://";
+            var address =
+              protocol +
+              window.location.host +
+              window.location.pathname +
+              "/ws";
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+              if (msg.data == "reload") window.location.reload();
+              else if (msg.data == "refreshcss") refreshCSS();
+            };
+            if (
+              sessionStorage &&
+              !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+            ) {
+              console.log("Live reload enabled.");
+              sessionStorage.setItem(
+                "IsThisFirstTime_Log_From_LiveServer",
+                true
+              );
+            }
+          })();
+        } else {
+          console.error(
+            "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+          );
+        }
+        // ]]>
+      </script>
+    </ul>
+  </body>
+</html>
